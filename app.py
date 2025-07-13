@@ -15,6 +15,9 @@ import joblib
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import LabelEncoder
+import joblib
+joblib.dump(pipeline_model, 'ppd_model_pipeline.pkl')
+
 
 # Load trained model and label encoder
 model = joblib.load('ppd_model_pipeline.pkl')
